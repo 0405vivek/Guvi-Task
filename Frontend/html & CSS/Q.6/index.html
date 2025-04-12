@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form class="contact-form" action="#" method="post">
+    <h2>Contact Us</h2>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label>Employee Type</label>
+    <div class="radio-group">
+      <label><input type="radio" name="employeeType" value="salaried" required> Salaried</label>
+      <label><input type="radio" name="employeeType" value="ownBusiness"> Own Business</label>
+    </div>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

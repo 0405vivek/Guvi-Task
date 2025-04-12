@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f36f02c2-cf76-40f5-89e7-2a9b66875bc6" name="Changes" comment="" />
+    <list default="true" id="69c1805f-be49-4762-b02f-254949e5c513" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,31 +11,30 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="2ttARbAS3Xoz4oY2shsUKjtwqHd" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.LibraryManagementSystem.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/Guvi/Guvi Task/OOPs Programming"
+    "onboarding.tips.debug.path": "E:/Guvi/Guvi Task/OOPs Programming/src/Main.java"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f36f02c2-cf76-40f5-89e7-2a9b66875bc6" name="Changes" comment="" />
-      <created>1741160989509</created>
+      <changelist id="69c1805f-be49-4762-b02f-254949e5c513" name="Changes" comment="" />
+      <created>1741160676058</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1741160989509</updated>
+      <updated>1741160676058</updated>
     </task>
     <servers />
   </component>

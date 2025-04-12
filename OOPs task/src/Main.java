@@ -142,19 +142,3 @@ public class Main {
         // Using default constructor
         Person p2 = new Person();
         p2.display();
-
-        // Account example
-        Account acc = new Account(5000);
-        acc.deposit(2000);
-        acc.withdraw(3000);
-        acc.displayBalance();
-
-        // Using default constructor
-        Account acc2 = new Account();
-        acc2.displayBalance();
-
-        // Employee example
-        Employee emp = new Employee("Alice", 30, 101, 75000);
-        emp.displayEmployee();
-    }
-}
