@@ -1,0 +1,28 @@
+/*
+Spring boot -> 2 communcation styles -> 
+1 REST -> HTTP protocol -> JSON / XML YAML 
+Spring WEB -> RestController GetMapping PostMapping etc -> Lightweight 
+Proper standards fr security 
+
+securty -> HTTPS > transport level secutiy 
+OAUTH / JWT ->
+
+2 SOAP -> Simple Object Access protocol
+XML 
+Spring Web Services 
+Built in security -> WS security 
+heavy weight 
+WSDL -> defines operations & messages 
+
+*/
+
+https://medium.com/@extio/developing-soap-web-services-with-spring-boot-a-comprehensive-guide-1d4f89bc3127
+
+https://github.com/shresth-sahai/guvi-java-2/blob/main/README.md
+
+https://medium.com/@extio/developing-soap-web-services-with-spring-boot-a-comprehensive-guide-1d4f89bc3127
+
+https://codefarm0.medium.com/300-spring-boot-interview-questions-43393e1c2bef
+
+
+https://www.hirist.tech/j/freecharge-java-developer-1471469?utm_source=LinkedIn&utm_medium=referral&utm_campaign=linkedin_apply&ref=linkedin
