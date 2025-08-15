@@ -44,3 +44,11 @@ class StreamOperations {
         scanner.close();
     }
 }
+
+
+
+// Q1: Convert to Uppercase → [D, EF]
+// Q2: Non-empty Strings → [bc, efg, abcd, jkl]
+// Q3: Students receiving special gifts → [Amit, Anjali, Aryan, Akash, Aditi]
+// Q4: Enter your birthdate (yyyy-mm-dd): 2000-01-01
+// Q4: Your age is → 25 years, 7 months, and 14 days.

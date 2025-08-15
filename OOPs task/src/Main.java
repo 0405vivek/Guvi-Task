@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // 1.1 Person class
 class Person {
     String name;
@@ -32,45 +34,6 @@ class Product {
         this.pid = pid;
         this.price = price;
         this.quantity = quantity;
-    }
-}
-
-class ProductMain {
-    public static void main(String[] args) {
-        java.util.Scanner sc = new java.util.Scanner(System.in);
-        Product[] products = new Product[5];
-
-        // Accept product details
-        for (int i = 0; i < 5; i++) {
-            System.out.println("Enter Product ID, Price, and Quantity:");
-            int pid = sc.nextInt();
-            double price = sc.nextDouble();
-            int quantity = sc.nextInt();
-            products[i] = new Product(pid, price, quantity);
-        }
-
-        // Finding product with highest price
-        Product highestPricedProduct = products[0];
-        for (Product p : products) {
-            if (p.price > highestPricedProduct.price) {
-                highestPricedProduct = p;
-            }
-        }
-        System.out.println("Product with highest price has ID: " + highestPricedProduct.pid);
-
-        // Calculate total amount spent
-        double totalAmount = calculateTotalAmount(products);
-        System.out.println("Total amount spent on all products: " + totalAmount);
-        sc.close();
-    }
-
-    // Method to calculate total amount spent
-    public static double calculateTotalAmount(Product[] products) {
-        double total = 0;
-        for (Product p : products) {
-            total += p.price * p.quantity;
-        }
-        return total;
     }
 }
 
@@ -114,31 +77,103 @@ class Account {
     }
 }
 
-// 1.4 Person and Employee class with inheritance
+// 1.4 Employee class extends Person
 class Employee extends Person {
     int employeeID;
     double salary;
 
-    // Constructor using super to initialize Person attributes
     public Employee(String name, int age, int employeeID, double salary) {
         super(name, age);
         this.employeeID = employeeID;
         this.salary = salary;
     }
 
-    // Method to display Employee details
     public void displayEmployee() {
         super.display();
         System.out.println("Employee ID: " + employeeID + ", Salary: " + salary);
     }
 }
 
+// ================== MAIN ==================
 public class Main {
     public static void main(String[] args) {
-        // Person example
+        Scanner sc = new Scanner(System.in);
+
+        // Question 1.1 Person Example
+        System.out.println("\n--- Q1.1 Person Example ---");
         Person p1 = new Person("John", 25);
         p1.display();
 
-        // Using default constructor
-        Person p2 = new Person();
+        Person p2 = new Person(); // default constructor
         p2.display();
+
+        // Question 1.2 Product Example
+        System.out.println("\n--- Q1.2 Product Example ---");
+        Product[] products = new Product[3];
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Enter Product ID, Price, and Quantity:");
+            int pid = sc.nextInt();
+            double price = sc.nextDouble();
+            int quantity = sc.nextInt();
+            products[i] = new Product(pid, price, quantity);
+        }
+
+        // Highest priced product
+        Product highestPricedProduct = products[0];
+        for (Product p : products) {
+            if (p.price > highestPricedProduct.price) {
+                highestPricedProduct = p;
+            }
+        }
+        System.out.println("Product with highest price has ID: " + highestPricedProduct.pid);
+
+        // Total amount
+        double totalAmount = 0;
+        for (Product p : products) {
+            totalAmount += p.price * p.quantity;
+        }
+        System.out.println("Total amount spent on all products: " + totalAmount);
+
+        // Question 1.3 Account Example
+        System.out.println("\n--- Q1.3 Account Example ---");
+        Account acc = new Account(1000); // initial balance
+        acc.displayBalance();
+        acc.deposit(500);
+        acc.withdraw(300);
+        acc.displayBalance();
+
+        // Question 1.4 Employee Example
+        System.out.println("\n--- Q1.4 Employee Example ---");
+        Employee e1 = new Employee("Alice", 30, 101, 55000);
+        e1.displayEmployee();
+
+        sc.close();
+    }
+}
+
+
+
+
+// --- Q1.1 Person Example ---
+// Name: John, Age: 25
+// Name: Unknown, Age: 18
+
+// --- Q1.2 Product Example ---
+// Enter Product ID, Price, and Quantity:
+// 2 200 3 
+// Enter Product ID, Price, and Quantity:
+// 1 2000 6 
+// Enter Product ID, Price, and Quantity:
+// 4 500 5
+// Product with highest price has ID: 1
+// Total amount spent on all products: 15100.0
+
+// --- Q1.3 Account Example ---
+// Current Balance: 1000.0
+// Deposited: 500.0
+// Withdrawn: 300.0
+// Current Balance: 1200.0
+
+// --- Q1.4 Employee Example ---
+// Name: Alice, Age: 30
+// Employee ID: 101, Salary: 55000.0
